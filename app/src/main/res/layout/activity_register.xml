@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity"
+    android:orientation="vertical"
+    android:padding="30dp"
+    >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Silahkan isi data pribadi anda"
+        android:textSize="24sp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        >
+    </TextView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        >
+        <ImageView
+            android:id="@+id/foto_user"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@mipmap/ic_launcher"
+            >
+        </ImageView>
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_pilih"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginStart="10dp"
+            android:text="Pilih Foto Profile"
+            android:textAllCaps="false"
+            app:cornerRadius="10dp"
+            >
+        </com.google.android.material.button.MaterialButton>
+    </LinearLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:boxStrokeWidth="0dp"
+        android:layout_marginTop="10dp"
+        android:textColorHint="#FFFFFF"
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/te_nama"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nama Lengkap"
+            android:textColor="@color/black"
+            android:paddingTop="25dp"
+            android:background="@drawable/te_bg"
+            android:inputType="text"
+            >
+        </com.google.android.material.textfield.TextInputEditText>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:boxStrokeWidth="0dp"
+        android:layout_marginTop="15dp"
+        android:textColorHint="#FFFFFF"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/te_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Username"
+            android:textColor="@color/black"
+            android:paddingTop="25dp"
+            android:background="@drawable/te_bg"
+            android:inputType="text"
+            >
+        </com.google.android.material.textfield.TextInputEditText>
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:boxStrokeWidth="0dp"
+        android:layout_marginTop="15dp"
+        android:textColorHint="#FFFFFF"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/te_alamat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Alamat"
+            android:textColor="@color/black"
+            android:paddingTop="25dp"
+            android:background="@drawable/te_bg"
+            android:inputType="text"
+            >
+        </com.google.android.material.textfield.TextInputEditText>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:boxStrokeWidth="0dp"
+        android:layout_marginTop="15dp"
+        android:textColorHint="#FFFFFF"
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/te_telepon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Telepon"
+            android:textColor="@color/black"
+            android:paddingTop="25dp"
+            android:background="@drawable/te_bg"
+            android:inputType="text">
+        </com.google.android.material.textfield.TextInputEditText>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:boxStrokeWidth="0dp"
+        android:layout_marginTop="15dp"
+        android:textColorHint="#FFFFFF"
+        app:passwordToggleEnabled="true"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/te_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="25dp"
+            android:hint="Password"
+            android:textColor="@color/black"
+            android:background="@drawable/te_bg"
+            android:inputType="textPassword"
+            android:longClickable="false"
+            >
+        </com.google.android.material.textfield.TextInputEditText>
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:boxStrokeWidth="0dp"
+        android:layout_marginTop="15dp"
+        android:textColorHint="#FFFFFF"
+        app:passwordToggleEnabled="true"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/te_konfirmasi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="25dp"
+            android:hint="Konfirmasi Password"
+            android:textColor="@color/black"
+            android:background="@drawable/te_bg"
+            android:inputType="textPassword"
+            android:longClickable="false"
+            >
+        </com.google.android.material.textfield.TextInputEditText>
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_daftar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="10dp"
+        android:text="Daftar"
+        android:textAllCaps="false"
+        app:cornerRadius="10dp"
+        app:backgroundTint="#127BCD"
+        >
+    </com.google.android.material.button.MaterialButton>
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_back"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="Sudah Punya Akun"
+        android:textAllCaps="false"
+        app:cornerRadius="10dp"
+        app:backgroundTint="#37A0F3"
+        >
+    </com.google.android.material.button.MaterialButton>
+</LinearLayout>

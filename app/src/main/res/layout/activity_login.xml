@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".LoginActivity"
+    android:padding="30dp">
+
+    <ImageView
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/supermarket"
+        android:layout_gravity="center_horizontal"
+        >
+    </ImageView>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Silahkan Login"
+        android:textSize="24sp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        >
+    </TextView>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:boxStrokeWidth="0dp"
+        android:layout_marginTop="20dp"
+        android:textColorHint="#FFFFFF"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/te_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Masukan Username"
+            android:textColor="@color/black"
+            android:paddingTop="25dp"
+            android:background="@drawable/te_bg"
+            android:inputType="text"
+            >
+        </com.google.android.material.textfield.TextInputEditText>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:boxStrokeWidth="0dp"
+        android:layout_marginTop="10dp"
+        android:textColorHint="#FFFFFF"
+        app:passwordToggleEnabled="true"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/te_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="25dp"
+            android:hint="Masukan Password"
+            android:textColor="@color/black"
+            android:background="@drawable/te_bg"
+            android:inputType="textPassword"
+            android:longClickable="false"
+            >
+        </com.google.android.material.textfield.TextInputEditText>
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_login"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="5dp"
+        android:text="Login"
+        android:textAllCaps="false"
+        app:cornerRadius="10dp"
+        app:backgroundTint="#127BCD"
+        >
+    </com.google.android.material.button.MaterialButton>
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_daftar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="Daftar"
+        android:textAllCaps="false"
+        app:cornerRadius="10dp"
+        app:backgroundTint="#37A0F3"
+        >
+    </com.google.android.material.button.MaterialButton>
+</LinearLayout>
